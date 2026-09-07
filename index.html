@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Happy Birthday Suwa - 11/9 - Xử Nữ" />
+    <title>Happy Birthday Suwa 🪼</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="bg-layer bg-one"></div>
+    <div class="bg-layer bg-two"></div>
+    <div class="bg-layer bg-three"></div>
+
+    <div class="stars" id="stars"></div>
+    <div class="bubbles" id="bubbles"></div>
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <button class="sound-toggle" id="soundToggle" aria-label="Bật / tắt nhạc">
+        <span id="soundIcon">♪</span>
+    </button>
+
+    <main class="page">
+        <div class="decor-jelly jelly-a">🪼</div>
+        <div class="decor-jelly jelly-b">🪼</div>
+        <div class="decor-jelly jelly-c">🪼</div>
+
+        <section class="hero-card">
+            <div class="shine"></div>
+
+            <div class="zodiac">
+                <span class="zodiac-icon">♍</span>
+                <div>
+                    <small>11 THÁNG 9</small>
+                    <strong>XỬ NỮ</strong>
+                </div>
+            </div>
+
+            <div class="avatar-shell">
+                <span class="orbit orbit-1">✦</span>
+                <span class="orbit orbit-2">♡</span>
+                <span class="orbit orbit-3">✧</span>
+                <div class="main-jelly">🪼</div>
+            </div>
+
+            <p class="name">Suwa</p>
+            <p class="eyebrow">A LITTLE BIRTHDAY WISH FOR YOU</p>
+
+            <h1>
+                Happy
+                <span>Birthday!</span>
+            </h1>
+
+            <p class="date">✦ 11 . 09 ✦</p>
+
+            <div class="countdown-wrap">
+                <p class="countdown-label">Đếm ngược đến ngày đặc biệt</p>
+                <div class="countdown" id="countdown">
+                    <div><strong id="days">00</strong><span>Ngày</span></div>
+                    <div><strong id="hours">00</strong><span>Giờ</span></div>
+                    <div><strong id="minutes">00</strong><span>Phút</span></div>
+                    <div><strong id="seconds">00</strong><span>Giây</span></div>
+                </div>
+                <p class="unlock-status" id="unlockStatus">🔒 Video chúc mừng sẽ mở vào 00:00 • 11/09/2026</p>
+            </div>
+
+            <!--<p class="intro">
+                Mong tuổi mới của Suwa sẽ dịu dàng như ánh trăng trên mặt biển,
+                lung linh như những vì sao và đáng yêu như một chú sứa nhỏ.
+            </p>-->
+
+            <button class="open-btn locked" id="openBtn" aria-disabled="true">
+                <span id="openBtnText">Chưa tới ngày mở video</span>
+                <span class="btn-star" id="openBtnIcon">🔒</span>
+            </button>
+        </section>
+    </main>
+
+    <div class="modal" id="modal" aria-hidden="true">
+        <div class="modal-sparkles" id="modalSparkles"></div>
+
+        <section class="video-card">
+            <button class="close-btn" id="closeBtn" aria-label="Đóng">×</button>
+
+            <div class="video-screen">
+                <div class="video-intro" id="videoIntro">
+                    <div class="video-intro-inner">
+                        <div class="video-jelly">🪼</div>
+                        <p class="video-for">FOR SUWA ♡</p>
+                        <h2>Một món quà nhỏ dành cho bạn</h2>
+                        <p class="video-intro-text">Chúc Suwa có một sinh nhật thật đáng nhớ ✨</p>
+                        <div class="intro-loader">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-stage" id="videoStage">
+                    <div class="video-title">
+                        <span>♡</span>
+                        <strong>Happy Birthday Suwa</strong>
+                        <span>♡</span>
+                    </div>
+
+                    <div class="video-frame">
+                        <video id="birthdayVideo" playsinline preload="metadata" disablepictureinpicture controlslist="nodownload noplaybackrate nofullscreen">
+                            <source src="suwa-birthday.mp4" type="video/mp4">
+                            Trình duyệt của bạn không hỗ trợ video HTML5.
+                        </video>
+                    </div>
+
+                    <p class="video-hint" id="videoHint">
+                        Đặt video của bạn cùng thư mục với index.html và đặt tên là <strong>suwa-birthday.mp4</strong>
+                    </p>
+
+                    <div class="video-footer">11.09 • Xử Nữ ♍ • 🪼</div>
+                </div>
+
+                <div class="birthday-card-end" id="birthdayCardEnd">
+                    <div class="end-card-glow"></div>
+                    <div class="end-jelly">🪼</div>
+                    <p class="end-small">HAPPY BIRTHDAY</p>
+                    <h2>Gửi Suwa ♡</h2>
+                    <div class="end-divider">
+                        <span></span>
+                        <b>✦</b>
+                        <span></span>
+                    </div>
+                    <p class="end-message">
+                        Chúc mừng sinh nhật em 🎂💗 Mong tuổi mới sẽ dịu dàng với em hơn một chút,
+                        cho em thật nhiều niềm vui, sức khỏe, may mắn và những điều mà em luôn mong đợi.
+                        Mong những ngày buồn sẽ ít đi, những nụ cười sẽ nhiều hơn, và dù có chuyện gì xảy ra
+                        thì em vẫn luôn giữ được sự đáng yêu, chân thành và đặc biệt của riêng mình.
+                        Anh không mong em phải có một năm thật hoàn hảo, chỉ mong mỗi ngày trôi qua em đều
+                        cảm thấy mình được yêu thương, được trân trọng và có người ở bên khi em cần.
+                    </p>
+                    <p class="end-message">
+                        Chúc em tuổi mới bình an, hạnh phúc và luôn rực rỡ theo cách của riêng em.
+
+                        Happy Birthday 💕
+                    </p>
+                    <div class="end-wishes">
+                        <span>♡ Bình yên</span>
+                        <span>✦ May mắn</span>
+                        <span>🪼 Hạnh phúc</span>
+                        <span>☁ Được yêu thương</span>
+                    </div>
+                    <div class="end-signature">
+                        <span>With love</span>
+                        <strong>11.09 ♡</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="burst-layer" id="burstLayer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
