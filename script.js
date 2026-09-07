@@ -1,4 +1,4 @@
-const OPEN_FOR_TEST = false;
+const OPEN_FOR_TEST = true;
 const BIRTHDAY_UNLOCK_TIME = new Date(2026, 8, 11, 0, 0, 0, 0);
 
 const openBtn = document.getElementById("openBtn");
